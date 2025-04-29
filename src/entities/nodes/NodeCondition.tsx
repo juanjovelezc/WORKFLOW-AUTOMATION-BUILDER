@@ -10,7 +10,7 @@ interface NodeConditionProps {
   };
   updateNode: (id: string, updatedData: any) => void;
   deleteNode: (id: string) => void;
-  createTrueFalseNodes: (conditionNode: any) => void; // <- Nueva prop
+  createTrueFalseNodes: (conditionNode: any) => void;
 }
 
 const NodeCondition = ({
