@@ -1,0 +1,103 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo del body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5; /* Fondo suave */
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Estilos para el Sidebar */
+.sidebar {
+  background-color: #f7fafc; /* Fondo claro */
+  border-right: 1px solid #e2e8f0; /* Borde de separación */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.sidebar h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #4a5568; /* Color gris oscuro */
+}
+
+/* Ajuste para las tarjetas del Sidebar */
+.sidebar .node-card {
+  margin-bottom: 16px; /* Espaciado entre tarjetas */
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar .node-card:hover {
+  background-color: #e2e8f0; /* Efecto de hover */
+}
+
+/* ReactFlow contenedor */
+.reactflow-wrapper {
+  position: relative;
+  background-color: #f7fafc;
+  height: 100%;
+  width: 100%;
+}
+
+/* Ajustes para los nodos */
+.react-flow-node {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+/* Estilos de los controles (Zoom, etc.) */
+.react-flow__controls {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Background de ReactFlow */
+.react-flow__background {
+  background-color: #e2e8f0;
+  opacity: 0.5;
+}
+
+/* Estilos de arrastrar */
+.dragging {
+  opacity: 0.6;
+}
+
+/* Personalización de los bordes */
+.react-flow__edge {
+  stroke-width: 2;
+  stroke: #4a5568; /* Color gris oscuro */
+}
+
+/* Estilos para cuando el área de arrastre está activada */
+.react-flow__node-connecting {
+  border-color: #63b3ed; /* Color azul claro */
+}
+
+/* Agregar estilo a los controles de zoom */
+.react-flow__controls button {
+  background-color: #edf2f7;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.react-flow__controls button:hover {
+  background-color: #cbd5e0;
+}
